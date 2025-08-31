@@ -68,9 +68,6 @@
     
 }
 
-.section-3{
-    background-color: #F4EEFF;
-}
 
 .image-wrapper>img {
     
@@ -80,9 +77,35 @@
 }
 
 .container-grid{
+    background-color: #EBEBEB;
     display: grid;
-    grid-template-rows: 40px 200px;
-    padding-top:3rem;
+    gap:50px;
+    grid-template-rows: 40px 300px;
+    padding:100px;
+    
+}
+
+
+@media (max-width:1500px)
+{
+    .container-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 950px;
+        gap:10px;
+    }
+
+    .container-grid{
+        padding: 20px;
+    }
+}
+
+.container-grid>.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
 }
 
 .container-grid>h2{
@@ -91,7 +114,91 @@
     align-items: center;
 }
 
-.languages{
+.container-grid .grid-item{
+    background-color: #A6B1E1;
+    border-radius: 8%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    width:400px;
+    height:300px;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+
+    
+}
+
+.grid-item>img{
+    height:200px;
+}
+
+.laptop>img {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+
+.laptop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.skills ul{
+    
+    list-style: none;
+    margin:20px;
+}
+
+.bar-length{
+    background-color: #EBEBEB;
+    width:80%;
+    height:10px;
+}
+
+.bar-style{
     background-color: #424874;
-    border-radius: 10px;
+}
+
+.portfolio{
+    background-color: #EBEBEB;
+    padding:100px;
+    
+}
+
+.portfolio>h2{
+    padding: 20px;
+}
+.portfolio-custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+    height:600px;
+    width:1000px;
+}
+
+.portfolio-custom p{
+    color:#42404A;
+}
+
+.contact{
+    background-color: #A6B1E1;
+    padding:50px;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+a {
+  color:#42404A;          
+  text-decoration: none;   
 }
