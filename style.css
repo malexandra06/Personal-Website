@@ -140,6 +140,10 @@
   50% { transform: translateY(-15px); }
 }
 
+.my-flex{
+    min-width: 400px;
+    
+}
 
 .laptop{
     display: flex;
